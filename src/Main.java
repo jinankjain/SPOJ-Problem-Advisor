@@ -47,7 +47,6 @@ public class Main {
 		while(ProblemFound<=3){
 			int page_start=1000/difficulty-200;
 			int page=(int)(Math.random()*1000000007)% 199+page_start;
-			page=0;
 			//System.out.println("http://www.spoj.com/problems/classical/sort=-6,start="+page);
 			url =new URL("http://www.spoj.com/problems/classical/sort=-6,start="+page);
 			con = url.openConnection();
