@@ -31,8 +31,7 @@ public class Main {
         String line = null;
         int next=1;
         int count=0;
-        File file=new File("logData"+user);
-        BufferedWriter write=new BufferedWriter(new FileWriter(file, true));
+       
         
         
         while ((line = br.readLine()) != null) {
@@ -48,13 +47,13 @@ public class Main {
         			content[6]=content[6].trim();
         			problems[head]=content[2];
         			head++;
-        			write.append("ID="+content[0]+":"+"DATE="+content[1]+":"+"PROBLEM="+content[2]+":"+"LANG="+content[6]+"\n");
+       
         		}
         	}
         	count++;
         	
          }
-        write.close();
+       
         int ProblemFound=0;
         	while(ProblemFound<=3){
         	int page_start=1000/difficulty-200;
